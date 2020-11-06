@@ -2,11 +2,9 @@ import os
 import click
 import pandas as pd
 
-from os import path
-
 APPLICATION_BASE_PATH = os.getcwd()
-DEFAULT_USER_MEAN_RATING_FILE_PATH = path.join(APPLICATION_BASE_PATH, './data/analysis/user-mean-rating.csv')
-DEFAULT_MOVIE_MEAN_RATING_FILE_PATH = path.join(APPLICATION_BASE_PATH, './data/analysis/movie-mean-rating.csv')
+DEFAULT_USER_MEAN_RATING_FILE_PATH = f'{APPLICATION_BASE_PATH}/data/analysis/user-mean-rating.csv'
+DEFAULT_MOVIE_MEAN_RATING_FILE_PATH = f'{APPLICATION_BASE_PATH}/data/analysis/movie-mean-rating.csv'
 
 
 @click.group('analysis')
